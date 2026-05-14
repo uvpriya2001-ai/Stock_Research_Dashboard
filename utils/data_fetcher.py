@@ -11,9 +11,9 @@ class DataFetcher:
         self.stock = yf.Ticker(ticker)
     
     def get_price_data(self):
-        """Fetch stock + market benchmark data"""
+    """Fetch stock + market benchmark data"""
 
-        try:
+    try:
 
         # STOCK DATA
         stock_data = yf.download(
@@ -49,10 +49,10 @@ class DataFetcher:
             "market_data": market_data
         }
 
-        except Exception as e:
+    except Exception as e:
         print(f"Error fetching price data: {e}")
         return None
-    
+        
     def get_stock_info(self):
         """Fetch fundamental and financial data"""
         try:
