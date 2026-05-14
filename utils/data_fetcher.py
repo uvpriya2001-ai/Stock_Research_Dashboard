@@ -13,7 +13,7 @@ class DataFetcher:
     def get_price_data(self):
         """Fetch stock + market benchmark data"""
 
-    try:
+        try:
 
         # STOCK DATA
         stock_data = yf.download(
