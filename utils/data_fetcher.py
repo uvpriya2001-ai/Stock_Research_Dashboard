@@ -49,7 +49,7 @@ class DataFetcher:
             "market_data": market_data
         }
 
-    except Exception as e:
+        except Exception as e:
         print(f"Error fetching price data: {e}")
         return None
     
